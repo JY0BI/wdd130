@@ -12,7 +12,7 @@ Fonts are separated by a & */
   --accent2-color: #B4CDED;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Montserrat;
+  --heading-font: Montserrat, sans-serif;
   --paragraph-font: Montserrat, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -101,7 +101,7 @@ p.colored {
 }
 nav {
   background-color: var(--nav-background-color);
-  line-height: 3em;
+  line-height: 1em;
   text-align: center;
   font-size: 1.2em;
   font-family: var(--heading-font);
@@ -115,7 +115,7 @@ nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
