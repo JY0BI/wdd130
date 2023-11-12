@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    max-height: 100vh;
+    background-color: white;
+    width: 100vw;
+    text-align: center;
+    color: rgb(75, 75, 75)
+}
+
+.buttons {
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h1 {
+    margin:0 auto;
+    width:fit-content;
+    font-size: 40px;
+    margin-top: 30vh;
+    margin-bottom: 30px;
+    line-height: 25px;
+    cursor:pointer;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.nav-button {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 0px;
+    z-index: 970;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.279);
+    opacity: 0;
+    animation: 1s ease-out 0.5s 1 slideUp forwards;
+    transition: 0.2s all;
+}
+
+.nav-button:hover {
+    color:aquamarine;
+    background-color: rgb(75, 75, 75);
+}
+
+.nav-button a {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 751;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.15s color;
+}
+
+.nav-button a:hover {
+    color:aquamarine;
+    background-color: rgb(75, 75, 75);
+}
+
+.button-text {
+    padding:20px;
+}
+
+#student-button {
+    grid-column: 1/2;
+}
+
+#academic-button {
+    grid-column: 2/3;
+}
+
+#educator-button {
+    grid-column: 3/4;
+}
+
+p {
+    margin: 0;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.dropdown {
+    color: black;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.279);
+    z-index: 750;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+ul {
+    padding:0;
+}
+
+.dropdown li {
+    color: aquamarine;
+    padding: 10px;
+    display: block;
+}
+
+#student-button:hover .dropdown {
+    display: block;
+    animation: 0.15s ease-in 0s 1 slideDown forwards;;
+}
+
+#professional-button:hover .dropdown {
+    display: block;
+    animation: 0.15s ease-in 0s 1 slideDown both;
+}
+
+.fade-out {
+    animation: fadeOutEffect 2s forwards;
+    animation-delay: 1s;
+}
+
+.fade-in {
+    animation-delay: 1s forwards;
+    animation: fadeInEffect 2s;
+
+}
+
+@keyframes fadeOutEffect {
+    0% { 
+        opacity: 1; 
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInEffect {
+    0% { opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+.fade-out-name {
+    animation: fadeOutName 1s forwards ease-in;
+}
+
+.fade-in-name {
+    animation: fadeInName 1s forwards ease-out;
+}
+
+@keyframes fadeOutName {
+    0% { 
+        opacity: 1; 
+    }
+    100% { 
+        opacity: 0; 
+        transform: translateX(-25px);
+        filter: blur(1px);
+    }
+}
+
+@keyframes fadeInName {
+    0% { opacity: 0; 
+        transform: translateX(25px);
+        filter: blur(1px);
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+#page-transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 1s;  /* 1 second transition for the opacity */
+    backdrop-filter: blur(5px);  /* Add a blur effect */
+    z-index: 9999;  /* Ensure it's above all other content */
+    pointer-events: none;  /* Make sure it doesn't interfere with any interactions */
+}
