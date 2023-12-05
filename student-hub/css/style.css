@@ -4,14 +4,14 @@ body {
 }
 
 .sidenav {
-    height:100vh;
+    height:calc(100vh - 88.5px);
     max-height: 100vh; /* Full-height: remove this if you want "auto" height */
-    width: 110px; /* Set the width of the sidebar */
+    width: 88.5px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    top: 88.5px; /* Stay at the top */
     left: 0;
-    background-color: #AAA; /* Black */
+    background-color: #0D2639; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
@@ -28,21 +28,25 @@ body {
   }
 
   .navimg img {
-    height:55px;
+    height:50px;
     transition: height 0.25s;
   }
   
   /* When you mouse over the navigation links, change their color */
   .navimg img:hover {
-    height: 65px;
+    height: 60px;
   }
   
   /* Style page content */
   .studentmain {
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 88.5px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
   
+footer {
+  margin-left: 88.5px;
+}
+
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-width: 450px) {
     .navimg img {height: 40px;}
