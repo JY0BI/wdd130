@@ -48,7 +48,7 @@ body {
 main {
   margin-top: 85px;
   margin-left: 85px;
-  padding: 5px 10px;
+  padding: 0;
   padding-bottom: 0px;
 }
 
@@ -207,6 +207,28 @@ li a:hover {
 
 .studentimg {
   width: 100%;
+}
+
+.parentHero {
+  display: Flex;
+  height: 600px;
+  background-image: url(pages.jpg);
+  background-size:cover;
+  margin:0;
+  color: white;
+  justify-content: center;
+}
+
+.parentH1 {
+  margin: auto auto;
+}
+
+.parentTxt {
+  margin: 50px 100px;
+}
+
+#libraryGirlImg {
+  width: 65%;
 }
 
 footer {
