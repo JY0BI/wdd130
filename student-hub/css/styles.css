@@ -197,7 +197,18 @@ li a:hover {
   margin-bottom: 10px;
 }
 
+.studenth1 {
+  margin-top: 161px;
+  margin-left: 85px;
+}
+
+.studentmain {
+  margin-left: 85px;
+}
+
 #studentgrid {
+  margin-left: 300px;
+  margin-right: 300px;
   padding: 25px;
   padding-bottom: 75px;
   display: grid;
