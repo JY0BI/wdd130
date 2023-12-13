@@ -199,7 +199,6 @@ li a:hover {
 
 .studenth1 {
   margin-top: 161px;
-  margin-left: 85px;
 }
 
 .studentmain {
@@ -207,8 +206,8 @@ li a:hover {
 }
 
 #studentgrid {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 225px;
+  margin-right: 225px;
   padding: 25px;
   padding-bottom: 75px;
   display: grid;
